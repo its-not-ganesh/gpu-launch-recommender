@@ -1,0 +1,12 @@
+source_revision=0b55f748a7a87424695c28aaccdbc95c94a696b0
+candidate_policy_blob=3f22104d381a2f4f2355323783f8e7260a7030f1
+analytical_model_blob=de4b6a87aadba8cfc5364f86b2f97c25b260f792
+binary_sha256=9efd84fee5fe30e78c0fa2406901ffb7cc8f02965d4b3418528d7fc4c23373cf
+model_revision=analytical-v1
+device_index=0
+compute_capability=7.5
+seed=3175
+warmups=5
+rounds=11
+batch_iters=20
+device_uuid=GPU-d5a480cd-7661-ba98-5d22-663c910e1001

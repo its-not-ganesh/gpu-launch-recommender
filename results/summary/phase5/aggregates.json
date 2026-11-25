@@ -1,0 +1,58 @@
+{
+  "calibration": {
+    "cases": 4,
+    "configurations": 63,
+    "valid_batches": 693,
+    "median_slowdown_pct": 7.630533367191227,
+    "min_slowdown_pct": 3.5511588938220706,
+    "max_slowdown_pct": 11.767154633242827,
+    "baselines": {
+      "fixed_1": {
+        "wins": 0,
+        "ties": 0,
+        "losses": 4,
+        "median_speedup": 0.9972636270279428
+      },
+      "fixed_2": {
+        "wins": 1,
+        "ties": 1,
+        "losses": 2,
+        "median_speedup": 0.997260554603749
+      },
+      "occupancy": {
+        "wins": 3,
+        "ties": 0,
+        "losses": 1,
+        "median_speedup": 1.1458562757152393
+      }
+    }
+  },
+  "heldout": {
+    "cases": 8,
+    "configurations": 122,
+    "valid_batches": 1342,
+    "median_slowdown_pct": 6.722749231992353,
+    "min_slowdown_pct": 0.0,
+    "max_slowdown_pct": 46.671889098948995,
+    "baselines": {
+      "fixed_1": {
+        "wins": 3,
+        "ties": 0,
+        "losses": 5,
+        "median_speedup": 0.986638561253399
+      },
+      "fixed_2": {
+        "wins": 1,
+        "ties": 0,
+        "losses": 7,
+        "median_speedup": 0.9373660945629512
+      },
+      "occupancy": {
+        "wins": 4,
+        "ties": 1,
+        "losses": 3,
+        "median_speedup": 1.0098961086868639
+      }
+    }
+  }
+}

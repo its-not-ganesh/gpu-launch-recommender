@@ -1,0 +1,11 @@
+review_utc=2026-11-25T09:00:53Z
+cases=4
+configurations=63
+valid_batches=693
+contention_observed=no
+correctness_failures=0
+timing_failures=0
+quality_flags=none
+maximum_candidate_iqr_percent=1.788
+maximum_batch_to_candidate_median_ratio=1.030
+decision=Retain analytical-v1, its candidate policy, and the full measurement protocol.

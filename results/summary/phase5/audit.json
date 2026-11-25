@@ -1,0 +1,334 @@
+{
+  "status": "passed",
+  "source_revision": "0b55f748a7a87424695c28aaccdbc95c94a696b0",
+  "model_revision": "analytical-v1",
+  "device": "NVIDIA GeForce RTX 2080 Ti",
+  "device_uuid": "GPU-d5a480cd-7661-ba98-5d22-663c910e1001",
+  "seed": 3175,
+  "warmups": 5,
+  "rounds": 11,
+  "batch_iters": 20,
+  "cases": 12,
+  "configurations": 185,
+  "valid_batches": 2035,
+  "manifest": {
+    "files": 63,
+    "manifest_sha256": "0710496e0905ad75aaeeb357d31907fa28e71a793353784fad90fe73889b5e72"
+  },
+  "superseded": [],
+  "workloads": [
+    {
+      "run_id": "calibration-vadd-262144-20261125T085821599942899Z-a1",
+      "split": "calibration",
+      "kernel": "vadd",
+      "dimensions": [
+        262144
+      ],
+      "configurations": 16,
+      "valid_batches": 176,
+      "source_revision": "0b55f748a7a87424695c28aaccdbc95c94a696b0",
+      "selections": {
+        "fixed_1": 8,
+        "fixed_2": 12,
+        "occupancy": 4,
+        "recommended": 13,
+        "empirical_best": 11
+      },
+      "gpu_driver_version": "595.104.02",
+      "gpu_pre_utc": "2026-11-25T08:58:22.084Z",
+      "gpu_post_utc": "2026-11-25T08:58:22.874Z",
+      "preflight_retries": 0,
+      "during_gpu_samples": 2,
+      "peak_sampled_gpu_util_pct": 1,
+      "quality_flags": []
+    },
+    {
+      "run_id": "calibration-compute-131072-20261125T085823051805419Z-a1",
+      "split": "calibration",
+      "kernel": "compute",
+      "dimensions": [
+        131072
+      ],
+      "configurations": 15,
+      "valid_batches": 165,
+      "source_revision": "0b55f748a7a87424695c28aaccdbc95c94a696b0",
+      "selections": {
+        "fixed_1": 8,
+        "fixed_2": 12,
+        "occupancy": 4,
+        "recommended": 15,
+        "empirical_best": 11
+      },
+      "gpu_driver_version": "595.104.02",
+      "gpu_pre_utc": "2026-11-25T08:58:23.540Z",
+      "gpu_post_utc": "2026-11-25T08:58:24.559Z",
+      "preflight_retries": 0,
+      "during_gpu_samples": 3,
+      "peak_sampled_gpu_util_pct": 4,
+      "quality_flags": []
+    },
+    {
+      "run_id": "calibration-reduce-262144-20261125T085824696613955Z-a1",
+      "split": "calibration",
+      "kernel": "reduce",
+      "dimensions": [
+        262144
+      ],
+      "configurations": 12,
+      "valid_batches": 132,
+      "source_revision": "0b55f748a7a87424695c28aaccdbc95c94a696b0",
+      "selections": {
+        "fixed_1": 6,
+        "fixed_2": 9,
+        "occupancy": 3,
+        "recommended": 10,
+        "empirical_best": 8
+      },
+      "gpu_driver_version": "595.104.02",
+      "gpu_pre_utc": "2026-11-25T08:58:25.180Z",
+      "gpu_post_utc": "2026-11-25T08:58:25.972Z",
+      "preflight_retries": 0,
+      "during_gpu_samples": 2,
+      "peak_sampled_gpu_util_pct": 4,
+      "quality_flags": []
+    },
+    {
+      "run_id": "calibration-transform-512x512-20261125T085826115373979Z-a1",
+      "split": "calibration",
+      "kernel": "transform",
+      "dimensions": [
+        512,
+        512
+      ],
+      "configurations": 20,
+      "valid_batches": 220,
+      "source_revision": "0b55f748a7a87424695c28aaccdbc95c94a696b0",
+      "selections": {
+        "fixed_1": 8,
+        "fixed_2": 16,
+        "occupancy": 4,
+        "recommended": 11,
+        "empirical_best": 15
+      },
+      "gpu_driver_version": "595.104.02",
+      "gpu_pre_utc": "2026-11-25T08:58:26.599Z",
+      "gpu_post_utc": "2026-11-25T08:58:27.311Z",
+      "preflight_retries": 0,
+      "during_gpu_samples": 2,
+      "peak_sampled_gpu_util_pct": 4,
+      "quality_flags": []
+    },
+    {
+      "run_id": "heldout-vadd-1048583-20261125T090053174714958Z-a1",
+      "split": "heldout",
+      "kernel": "vadd",
+      "dimensions": [
+        1048583
+      ],
+      "configurations": 16,
+      "valid_batches": 176,
+      "source_revision": "0b55f748a7a87424695c28aaccdbc95c94a696b0",
+      "selections": {
+        "fixed_1": 8,
+        "fixed_2": 12,
+        "occupancy": 4,
+        "recommended": 7,
+        "empirical_best": 12
+      },
+      "gpu_driver_version": "595.104.02",
+      "gpu_pre_utc": "2026-11-25T09:00:53.665Z",
+      "gpu_post_utc": "2026-11-25T09:00:54.792Z",
+      "preflight_retries": 0,
+      "during_gpu_samples": 3,
+      "peak_sampled_gpu_util_pct": 1,
+      "quality_flags": []
+    },
+    {
+      "run_id": "heldout-vadd-16777216-20261125T090054930863921Z-a1",
+      "split": "heldout",
+      "kernel": "vadd",
+      "dimensions": [
+        16777216
+      ],
+      "configurations": 16,
+      "valid_batches": 176,
+      "source_revision": "0b55f748a7a87424695c28aaccdbc95c94a696b0",
+      "selections": {
+        "fixed_1": 8,
+        "fixed_2": 12,
+        "occupancy": 4,
+        "recommended": 13,
+        "empirical_best": 16
+      },
+      "gpu_driver_version": "595.104.02",
+      "gpu_pre_utc": "2026-11-25T09:00:58.480Z",
+      "gpu_post_utc": "2026-11-25T09:01:02.188Z",
+      "preflight_retries": 1,
+      "during_gpu_samples": 11,
+      "peak_sampled_gpu_util_pct": 100,
+      "quality_flags": [
+        "preflight_waited"
+      ]
+    },
+    {
+      "run_id": "heldout-compute-32771-20261125T090102329771079Z-a1",
+      "split": "heldout",
+      "kernel": "compute",
+      "dimensions": [
+        32771
+      ],
+      "configurations": 10,
+      "valid_batches": 110,
+      "source_revision": "0b55f748a7a87424695c28aaccdbc95c94a696b0",
+      "selections": {
+        "fixed_1": 7,
+        "fixed_2": 9,
+        "occupancy": 4,
+        "recommended": 10,
+        "empirical_best": 9
+      },
+      "gpu_driver_version": "595.104.02",
+      "gpu_pre_utc": "2026-11-25T09:01:05.878Z",
+      "gpu_post_utc": "2026-11-25T09:01:06.590Z",
+      "preflight_retries": 1,
+      "during_gpu_samples": 2,
+      "peak_sampled_gpu_util_pct": 0,
+      "quality_flags": [
+        "preflight_waited"
+      ]
+    },
+    {
+      "run_id": "heldout-compute-1048583-20261125T090106729400237Z-a1",
+      "split": "heldout",
+      "kernel": "compute",
+      "dimensions": [
+        1048583
+      ],
+      "configurations": 16,
+      "valid_batches": 176,
+      "source_revision": "0b55f748a7a87424695c28aaccdbc95c94a696b0",
+      "selections": {
+        "fixed_1": 8,
+        "fixed_2": 12,
+        "occupancy": 4,
+        "recommended": 4,
+        "empirical_best": 11
+      },
+      "gpu_driver_version": "595.104.02",
+      "gpu_pre_utc": "2026-11-25T09:01:07.212Z",
+      "gpu_post_utc": "2026-11-25T09:01:08.675Z",
+      "preflight_retries": 0,
+      "during_gpu_samples": 4,
+      "peak_sampled_gpu_util_pct": 7,
+      "quality_flags": []
+    },
+    {
+      "run_id": "heldout-reduce-1048583-20261125T090108815062797Z-a1",
+      "split": "heldout",
+      "kernel": "reduce",
+      "dimensions": [
+        1048583
+      ],
+      "configurations": 12,
+      "valid_batches": 132,
+      "source_revision": "0b55f748a7a87424695c28aaccdbc95c94a696b0",
+      "selections": {
+        "fixed_1": 6,
+        "fixed_2": 9,
+        "occupancy": 3,
+        "recommended": 10,
+        "empirical_best": 9
+      },
+      "gpu_driver_version": "595.104.02",
+      "gpu_pre_utc": "2026-11-25T09:01:12.366Z",
+      "gpu_post_utc": "2026-11-25T09:01:13.143Z",
+      "preflight_retries": 1,
+      "during_gpu_samples": 2,
+      "peak_sampled_gpu_util_pct": 0,
+      "quality_flags": [
+        "preflight_waited"
+      ]
+    },
+    {
+      "run_id": "heldout-reduce-16777216-20261125T090113284684822Z-a1",
+      "split": "heldout",
+      "kernel": "reduce",
+      "dimensions": [
+        16777216
+      ],
+      "configurations": 12,
+      "valid_batches": 132,
+      "source_revision": "0b55f748a7a87424695c28aaccdbc95c94a696b0",
+      "selections": {
+        "fixed_1": 6,
+        "fixed_2": 9,
+        "occupancy": 3,
+        "recommended": 10,
+        "empirical_best": 11
+      },
+      "gpu_driver_version": "595.104.02",
+      "gpu_pre_utc": "2026-11-25T09:01:13.771Z",
+      "gpu_post_utc": "2026-11-25T09:01:16.132Z",
+      "preflight_retries": 0,
+      "during_gpu_samples": 7,
+      "peak_sampled_gpu_util_pct": 53,
+      "quality_flags": []
+    },
+    {
+      "run_id": "heldout-transform-1009x769-20261125T090116277933142Z-a1",
+      "split": "heldout",
+      "kernel": "transform",
+      "dimensions": [
+        1009,
+        769
+      ],
+      "configurations": 20,
+      "valid_batches": 220,
+      "source_revision": "0b55f748a7a87424695c28aaccdbc95c94a696b0",
+      "selections": {
+        "fixed_1": 8,
+        "fixed_2": 16,
+        "occupancy": 4,
+        "recommended": 19,
+        "empirical_best": 19
+      },
+      "gpu_driver_version": "595.104.02",
+      "gpu_pre_utc": "2026-11-25T09:01:19.822Z",
+      "gpu_post_utc": "2026-11-25T09:01:20.937Z",
+      "preflight_retries": 1,
+      "during_gpu_samples": 3,
+      "peak_sampled_gpu_util_pct": 0,
+      "quality_flags": [
+        "preflight_waited"
+      ]
+    },
+    {
+      "run_id": "heldout-transform-4096x3072-20261125T090121079435024Z-a1",
+      "split": "heldout",
+      "kernel": "transform",
+      "dimensions": [
+        4096,
+        3072
+      ],
+      "configurations": 20,
+      "valid_batches": 220,
+      "source_revision": "0b55f748a7a87424695c28aaccdbc95c94a696b0",
+      "selections": {
+        "fixed_1": 8,
+        "fixed_2": 16,
+        "occupancy": 4,
+        "recommended": 19,
+        "empirical_best": 8
+      },
+      "gpu_driver_version": "595.104.02",
+      "gpu_pre_utc": "2026-11-25T09:01:24.621Z",
+      "gpu_post_utc": "2026-11-25T09:01:27.719Z",
+      "preflight_retries": 1,
+      "during_gpu_samples": 9,
+      "peak_sampled_gpu_util_pct": 100,
+      "quality_flags": [
+        "preflight_waited"
+      ]
+    }
+  ]
+}
