@@ -20,7 +20,6 @@ from reportlab.platypus import Image, KeepTogether, PageBreak, Paragraph, Simple
 ROOT = Path(__file__).resolve().parents[1]
 SUMMARY = ROOT / "results/summary/phase5"
 FIGURES = ROOT / "results/figures"
-URL = "https://github.com/its-not-ganesh/gpu-launch-recommender"
 INK = colors.HexColor("#152b40")
 MUTED = colors.HexColor("#405971")
 BLUE = colors.HexColor("#1d566d")
@@ -204,7 +203,7 @@ if __name__ == "__main__":
     p(f"Frozen measurement source revision <font name='ReportMono' size='9'>{freeze['source_revision']}</font>. "
       "The candidate-generator and model Git blob IDs and binary SHA-256 are in the raw protocol record. "
       "Documentation, analysis and packaging commits are later revisions. The model and candidate policy stayed frozen "
-      f"after calibration. Companion distribution URL {link(URL, URL)}.")
+      "after calibration.")
     sub("Benchmarks and workload matrix")
     table([["Kernel and operation", "Calibration", "Held-out"],
            ["Vector add, FP32 x + y", "262,144", "1,048,583 and 16,777,216"],
@@ -331,11 +330,6 @@ if __name__ == "__main__":
         f"NVIDIA. Turing Tuning Guide. {link('Streaming multiprocessor and occupancy limits','https://docs.nvidia.com/cuda/archive/13.2.0/turing-tuning-guide/index.html')}.",
     ]:
         p(f"[{len([s for s in story if isinstance(s, Paragraph) and s.getPlainText().startswith('[')]) + 1}] {citation}")
-    sub("Artifact reproduction")
-    p("The submitted readme.txt documents the CIMS build, correctness checks, recommendation and evaluation examples. "
-      "scripts/analyze.py revalidates the raw manifest and regenerates all statistical tables and five figures. "
-      "The editable report source embeds those outputs. The raw CSV timings are retained with original precision.")
-
     def footer(canvas, doc):
         canvas.saveState()
         canvas.setStrokeColor(colors.HexColor("#c4d3df"))
